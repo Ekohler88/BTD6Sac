@@ -1,0 +1,47 @@
+﻿* Want to:
+   * Give a value teir and get combinations back
+      * Control amount of towers
+      * Control value equal too
+      * Giving values for each grouping or specify each group
+      * Account for bonus discount along the way for the support sections
+   * Have the algorithm sort out from least to most expensive and the other way 
+   * create a link list of for the combination and if it goes over stop the list there
+   * Make a new linked list for the next combination that starts one step in and repeat
+   * Then make sure if the link list is longer the exception length through out and start on new link list one step in. In this way I think going from highest cost to lowest would work
+   * Have base values manual put in but write out values that corresponds to tower like 0-0-0 or 0-3-2 tower and order those values from greatest to smallest
+   * Also going through x amount of times determined by me the programer until it displays y amount the user wants to see in results of combination. So do 100 times and user wants 5 combinations of answers to get to z amount money spent that includes the upgrades the tower them selfs. So it will go through 100 times keeping the best 5 combos that email z amount in total while pruning the largest value of a combo in the results that is in the top 5 
+* New day if thinking:
+   * Defining a monkey tower class:
+      * Has a level system like 000 or 302
+      * Has a total value like 000 is the base cost of said monkey tower and 302 is the value of the base plus each of the first tier upgrade values up to 3 and the third tier values up to 2
+      * Has a discount percentage based on outside sources
+         * For instance monkey knowledge lowering the cost of towers and upgrades or near support towers that lower cost (monkey village third tier or sun temple upgraded with support.
+      * In later development might want to look into has a value based on size since there is only a certain amount of towers that could be next to each other.
+      * Might want to make the upgrades and base cost a separate so that it could be a base start to evaluating total cost.
+         * As in if it is higher difficulty it will cost a percent amount different and that could factored in before calculating so only one set of values will be need and not a set for each game type.
+         * So maybe each monkey tower has a upgrade path method that handles getting the value of said tower base of the ref value like 000 is base cost
+      * Discount value will need to be flexible and could have a marker value of which discounts are in effect for each monkey tower (has a maker discount value) where so discounts only work for the first military monkey bought them back to normal, so the monkey class and the list of monkey would need that.
+      * Has a preferred marker - as in some monkey towers are better early game than others for some maps would like a option to keep them in the list no matter what as well as it's upgrade desire. Might even make a catagory be skipped if it is over the desired value
+   * A list of monkey towers
+      * Has a total amount cost based on each monkey tower
+      * Has a total amount of towers
+      * Might make this a linked list because I do want it to be flexible to adding more amount but should have a limit to avoid over flow and sensible amount of towers on screen or in range of tower
+      * If size is considered in base class then a total size amount will be needed here
+   * Discounts values discussed above may need to be its own class
+      * The whole percent could be given to monkey tower class but this class could figure out the total. Has a total discount
+      * Has a type of discount 
+      * Has a boolean for discount at all 
+      * Some monkey towers discounts are built into the tower and would need to call this class even if the user has no monkey knowledge so the boolean could help determine a could of things, monkey knowledge or not, or discount village or not
+   * A possibility class of the possible towers with the values of there upgrade path. This class will take all the classes to this point or at least most since it will return a list of possible combination of monkey towers
+      * Either all the math work is done here or this is the base case for working with these possible monkey towers
+      * There are 4 category of money towers
+      * This will make a list of all types of money for that category based on the game type.
+      * It might be up to a different class to use this value system to do more math to hold the combination of the answer the user want based on so may variables mentioned above
+* At this point it is easy to see that a lot could be added into this program once it has a base.
+* So focus the objective make a preferred monkey Tower list that builds a list of monkey towers with at least one preferred monkey tower that gives the least amount of monkey towers at the exact or slightly more value
+   * This is a lot here but the idea behind it will get the original problem solved but give enough freedom to have more use with the paragon system that could lead to another problem to solve.
+   * So if thing to make a class of monkey to make monkey objects
+   * The class to hold a expandable list of that object
+   * Class to make a base case of possible monkeys towers, focus on bring in easy data sheets and easy to edit form since changes to game can make updating app just here and have rest of program work. Less redundancy in data
+   * Class to tackle the discount that will some how effect other classes and the total outcome
+   * Class to do the math work of base case discounts and constraints of the user like the level difficulty or amount of monkeys they want or which ones they want
