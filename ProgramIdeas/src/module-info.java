@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author ekohl
+ *
+ */
+module ProgramIdeas {
+}
