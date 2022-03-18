@@ -1,0 +1,15 @@
+Noticed that I am constantly second guessing the work of what I want to accomplish with this application.
+First off, I am have a plan that is greater than I thought so here is the outline.
+1) Over all make an application that could be used on the iOs and android phones, as well the computers respectfully.
+2) Set goals to reach one in a practical manner.
+3) Starting off with getting a program I want on the computer side of things with my windows 10 computer systems.
+4) Get that avaible through downloading with github or the sort.
+5) Next focus on the phone app that I have android. Using android studios.
+6) When money permits or when I can barrow family member iOS try to develop on using it after better understanding developing with windows.
+7) At this point it would be done and would just be a matter of deciding to buy an iOs device or not and how I want to update it before official launch.
+
+So step 3) I plan on writing out more on because I it will braking down the scatter plan and molding it into small steps one after the other.
+a) First one I will be brake down is eclipse java source reading a spread sheet of info that could be updated and worked with.
+b) develop a solution
+c) develop next solutions based on monkey knowledge.
+d) add constraints users can apply and adding to it.
