@@ -13,3 +13,19 @@ a) First one I will be brake down is eclipse java source reading a spread sheet 
 b) develop a solution
 c) develop next solutions based on monkey knowledge.
 d) add constraints users can apply and adding to it.
+
+3-19-2022
+As indicated above I want to break down the problem into smaller pieces to solve.
+First off it is a min max problem which is based around the sacrifice mechanic of the game.
+For the first part I want to find out the cheapest tower through upgrades for each category that will be at least 50,000 bananas(in game currency).
+The reason I want to start with this because from this point I could build on the algorithm more by getting closer to that by using multiple towers.
+Restricting the input of the user to just hit a button to solve this one way will be built more on with adding more complexity to the algorithm, so this first part only meant to find a simple program that ties into a spread sheet since that would be a reasonable way to represent the upgrades and hold data that could be easily updated with game changes.
+I have already played around with some practice with object based making and found it would be easier to make one, maybe large spread sheet.
+The difficulties of the game mode and an in-game mechanic called monkey knowledge changes the values of the upgrades a certain percent or flat value differences base on  so having just a baseline of these upgrades will be enough to first hold the information needed.
+This is of course assuming that the manipulation of the spread sheet will not take up much space and will be fast enough approach.
+However if need be more data could be hard coded for faster speed at sacrifice of space.
+Will check further down the line but based on the relatively small data size this should not be required.
+
+Summarizing above first find the lowest costing tower upgrades that will hit at least 50,000 using a spread sheet to hold all the upgrade paths.
+This will help define a algorithm that will take into account the certain upgrade mechanic called cross path that allows the tower to go down 2 paths with one going over 3 and the other only up to 2.
+  
