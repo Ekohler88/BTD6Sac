@@ -45,3 +45,11 @@
    * Class to make a base case of possible monkeys towers, focus on bring in easy data sheets and easy to edit form since changes to game can make updating app just here and have rest of program work. Less redundancy in data
    * Class to tackle the discount that will some how effect other classes and the total outcome
    * Class to do the math work of base case discounts and constraints of the user like the level difficulty or amount of monkeys they want or which ones they want
+* 5-12-2022:
+   * To iterate through each combo posability and narrow down the redunent calculations going through each tier and alternating the other two section will be 0, 1, or 2 only once. However, the difference only matter from the value of 3 or greater because the cross path will be different.
+	* More details on the algorithm thoughs:
+		1) Hold a value for a section like the top and keep it the same value throughout. Then set it to the start value like 0 or 1 thorugh 5. After that value is set, set the first other teir value through the loop of 0 to 2.
+			ex) top 0, then botttom will be 0, then bottom will be 1 next and top staying 0, then bottom will be 2 and top 0, then bottom set back to 0 and middle will change to 1 and top staring 0, then middle to 2 and a whole loop is finished.
+		2) The example above describes the value of 0 but when it is repeated for holding the middle value then the same output values will be repeated in a different order which will not help going through all the options and leads to repeats.
+			However since it works for a differnce of value of 3 or greater than doing loop once from 0 to 2 with the top holding will be enough for all the data we need. 
+		3) Next looping through the different values with values of 3 or grater for top, middle and bottom.
