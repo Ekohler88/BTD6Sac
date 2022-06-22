@@ -1,0 +1,2 @@
+This is a backup plan for trying new things with python on some of the ideas that might be difficult to try with java first.
+This one is a test play ground for data objects that I would want to test in multip platforms.
