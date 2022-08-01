@@ -15,7 +15,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class Tower {
 	String temp = "hello world? This is Tower Class what do you want?";
 	
-	String upgradePath = temp;
+	String upgradePath = "555";
 	int cost = 0;
 	double discount = 0.0;
 	String category = temp;
@@ -158,7 +158,7 @@ public class Tower {
 	
 //Methods related tower
 	//TODO:
-	// format method:
+	// format method: DONE
 		//Keep upgradePath in format 000 etc...
 		//Might want a converting methods to help have:
 			//value of each upgradePath character be represented
@@ -167,7 +167,7 @@ public class Tower {
 					//not [3,5,4] because a cross upgrade of 2 and one other upgrade is only allowed so there for:
 						// tower can not have a upgrade in each path
 						// if a upgrade increases to 3 or greater than only one other path can go up to 2 and no greater.
-	// Totaling cost method:
+	// Totaling cost method: DONE until updated .xml part
 		//this will take the base cost and add the upgrades.
 /*
  * Thinking of making a [5,5,5] the monkey type that error that lets the program run but show a logic problem for formating.
@@ -180,8 +180,8 @@ public class Tower {
 		else {
 			char pathl[] = path.toCharArray();
 			if(Character.isDigit(path.charAt(0)) && Character.isDigit(path.charAt(1)) && Character.isDigit(path.charAt(2)) ) {
-				 System.out.println(pathl[0]);
-				pathList[0] =  (int)pathl[0] - (int)'0';
+				// - '0' to convert the char to ints
+				pathList[0] = (int)pathl[0] - (int)'0';
 				pathList[1] = (int)pathl[1] - (int)'0';
 				pathList[2] = (int)pathl[2] - (int)'0';
 			}//end of if
@@ -192,10 +192,20 @@ public class Tower {
 		return pathList;
 	}
 	
+	/**
+	 * Method to sum up the tower upgrades to update the cost of the tower.
+	 * Still need to update .xml translation portion.
+	 */
 	public void summingUpTower() {
 		String path = this.upgradePath;
 		//lol i wanted to this one because it looked easier but need a converter here
-		
+		int[] pathList = converPathToList(path);
+		int top = pathList[0];
+		int mid = pathList[1];
+		int bot = pathList[2];
+		// this part will need practice .xml file to locate the values so will notetate for now and update later.
+//------------------
+		cost = top + mid + bot;
 	}//END of summingUpTower
 	
 	
@@ -205,8 +215,11 @@ public class Tower {
 		System.out.println("hello world? This is Tower Class what do you want?");
 		System.out.println("testing for this class with this main section");
 		Tower t1 = new Tower();
-		int list[] = t1.converPathToList("1212tf3");
+		int list[] = t1.converPathToList("543");
+		System.out.println(t1.cost);
 		System.out.println(list[0]+" "+list[1]+" "+list[2]);
+		t1.summingUpTower();
+		System.out.println(t1.cost);
 		
 	}//end of main
 }//end of class tower
