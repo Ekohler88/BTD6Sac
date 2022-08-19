@@ -14,7 +14,6 @@ import org.apache.poi.util.SystemOutLogger;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;   
 public class Tower {
 	String temp = "hello world? This is Tower Class what do you want?";
-	
 	String upgradePath = "555";
 	int cost = 0;
 	double discount = 0.0;
