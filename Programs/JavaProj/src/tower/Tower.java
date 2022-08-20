@@ -170,8 +170,12 @@ public class Tower {
 		//this will take the base cost and add the upgrades.
 
 //Going to add the file object methods here before the reading classes in order to get something to read.
-	
-	public String read() {
+	/**
+	 * Method to just read the whole xml sheet.
+	 * 
+	 * @return String
+	 */
+	public String readSheet() {
 		String sheet = "";
 		return sheet;
 	}
