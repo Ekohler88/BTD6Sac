@@ -168,9 +168,15 @@ public class Tower {
 						// if a upgrade increases to 3 or greater than only one other path can go up to 2 and no greater.
 	// Totaling cost method: DONE until updated .xml part
 		//this will take the base cost and add the upgrades.
-/*
- * Thinking of making a [5,5,5] the monkey type that error that lets the program run but show a logic problem for formating.
- */
+
+//Going to add the file object methods here before the reading classes in order to get something to read.
+	
+	public String read() {
+		String sheet = "";
+		return sheet;
+	}
+	
+// Thinking of making a [5,5,5] the monkey type that error that lets the program run but show a logic problem for formating.
 	public int[] converPathToList(String path) {
 		int pathList[] = {5, 5, 5};
 		if(path.length() > 4) {
@@ -206,7 +212,6 @@ public class Tower {
 //------------------
 		cost = top + mid + bot;
 	}//END of summingUpTower
-	
 	
 //MAIN
 	public static void main(String[] args)   
