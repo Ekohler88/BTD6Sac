@@ -1,5 +1,6 @@
 package tower;
 //reading value of a particular cell  
+import java.io.File;
 import java.io.FileInputStream;  
 import java.io.FileNotFoundException;  
 import java.io.IOException;
@@ -11,6 +12,7 @@ import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.usermodel.Sheet;  
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.util.SystemOutLogger;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;   
 public class Tower {
 	String temp = "hello world? This is Tower Class what do you want?";
@@ -175,8 +177,55 @@ public class Tower {
 	 * 
 	 * @return String
 	 */
-	public String readSheet() {
-		String sheet = "";
+	@SuppressWarnings("deprecation")
+	public String[][] readSheet() {
+		
+		int i=483; int j=23;
+		String[][] sheet = new String[i][j];
+		try {
+			i = 0;
+			j = 0;
+			FileInputStream xmlFile = new FileInputStream(new File("C:\\Users\\ekohl\\OneDrive\\Documents\\GitHub\\BTD6Sac\\Data_Sheets\\Btd6 tower spread sheet.xlsx"));
+			XSSFWorkbook workBook = new XSSFWorkbook(xmlFile);
+			XSSFSheet workBookSheet = workBook.getSheetAt(0);
+			Iterator<Row> itrerate = workBookSheet.iterator();
+			while(itrerate.hasNext()) {
+				Row row = itrerate.next();
+				Iterator<Cell> cellIterator = row.cellIterator();
+				
+				while(cellIterator.hasNext() ) {
+					Cell cell = cellIterator.next();
+					switch(cell.getCellType() ) {
+						case Cell.CELL_TYPE_STRING:
+							//sheet.concat(cell.getStringCellValue() + "\t\t\t");
+							System.out.print(cell.getStringCellValue() + "\t\t\t");
+							sheet[i][j] = cell.getStringCellValue();	
+							
+							break;
+						case Cell.CELL_TYPE_NUMERIC:
+						//	sheet.concat(cell.getStringCellValue() + "\t\t\t");
+							System.out.print(cell.getNumericCellValue() + "\t\t\t");
+							sheet[i][j] = String.valueOf(cell.getNumericCellValue());
+							
+							break;
+						case Cell.CELL_TYPE_BOOLEAN:
+						//	sheet.concat(cell.getStringCellValue() + "\t\t\t");
+							System.out.print(cell.getBooleanCellValue() + "\t\t\t");
+							sheet[i][j] = String.valueOf(cell.getBooleanCellValue());
+						
+							break;	
+						default:
+							
+					}
+					i++;
+				}
+				System.out.println("");
+				j++;
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return sheet;
 	}
 	
@@ -220,6 +269,7 @@ public class Tower {
 //MAIN
 	public static void main(String[] args)   
 	{
+		
 		System.out.println("hello world? This is Tower Class what do you want?");
 		System.out.println("testing for this class with this main section");
 		Tower t1 = new Tower();
@@ -228,6 +278,13 @@ public class Tower {
 		System.out.println(list[0]+" "+list[1]+" "+list[2]);
 		t1.summingUpTower();
 		System.out.println(t1.cost);
-		
+		String[][] matrix = t1.readSheet();
+		for(int r=0;r<matrix.length; r++) {
+			 for (int c=0; c<matrix [r].length; c++) {
+			     System.out.print(matrix [r][c] + " ");
+			 }
+			 System.out.println();
+			}
+		System.out.println(matrix[0][4]);
 	}//end of main
 }//end of class tower
