@@ -173,7 +173,7 @@ public class Tower {
 	/**
 	 * Method to just read the whole xml sheet.
 	 * 
-	 * @return String
+	 * @return String of the whole sheet.
 	 */
 	public String readSheet() {
 		String sheet = "";
