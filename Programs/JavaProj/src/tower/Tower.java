@@ -1,17 +1,6 @@
 package tower;
 //reading value of a particular cell  
-import java.io.FileInputStream;  
-import java.io.FileNotFoundException;  
-import java.io.IOException;
-import java.util.Iterator;
 
-
-import org.apache.poi.ss.usermodel.Cell;  
-import org.apache.poi.ss.usermodel.*;  
-import org.apache.poi.ss.usermodel.Sheet;  
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.util.SystemOutLogger;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;   
 public class Tower {
 	String temp = "hello world? This is Tower Class what do you want?";
 	String upgradePath = "555";
@@ -179,7 +168,19 @@ public class Tower {
 		String sheet = "";
 		return sheet;
 	}
-	
+
+	/**
+	 * Method for make reading rest of code easier.
+	 * @param pathlist Char
+	 * @return int value
+	 */
+	public int charToInt(char pathlist)
+	{
+		int i = 0;
+		i = (int)pathlist - (int)'0';
+		return i;
+	}
+
 // Thinking of making a [5,5,5] the monkey type that error that lets the program run but show a logic problem for formating.
 	public int[] converPathToList(String path) {
 		int pathList[] = {5, 5, 5};
@@ -188,11 +189,12 @@ public class Tower {
 		}//end of if
 		else {
 			char pathl[] = path.toCharArray();
-			if(Character.isDigit(path.charAt(0)) && Character.isDigit(path.charAt(1)) && Character.isDigit(path.charAt(2)) ) {
+			if(Character.isDigit(path.charAt(0)) && Character.isDigit(path.charAt(1)) && Character.isDigit(path.charAt(2))
+			&& charToInt(pathl[0]) < 6 && charToInt(pathl[1]) < 6  && charToInt(pathl[2]) < 6) {
 				// - '0' to convert the char to ints
-				pathList[0] = (int)pathl[0] - (int)'0';
-				pathList[1] = (int)pathl[1] - (int)'0';
-				pathList[2] = (int)pathl[2] - (int)'0';
+				pathList[0] = charToInt(pathl[0]);
+				pathList[1] = charToInt(pathl[1]);
+				pathList[2] = charToInt(pathl[2]);
 			}//end of if
 			else {
 				System.out.println("The format values are not numbers");
@@ -223,7 +225,7 @@ public class Tower {
 		System.out.println("hello world? This is Tower Class what do you want?");
 		System.out.println("testing for this class with this main section");
 		Tower t1 = new Tower();
-		int list[] = t1.converPathToList("543");
+		int list[] = t1.converPathToList("131");
 		System.out.println(t1.cost);
 		System.out.println(list[0]+" "+list[1]+" "+list[2]);
 		t1.summingUpTower();
