@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b707b9f5-7e93-4597-9f28-9e6ff74bb23f" name="Changes" comment="Made changes converPathToList by adding more conditions for proper upgrade check. &#10;And made new method to convert char to in since the java style would be long and not intuitive looking. EK" />
+    <list default="true" id="b707b9f5-7e93-4597-9f28-9e6ff74bb23f" name="Changes" comment="Made changes converPathToList by adding more conditions for proper upgrade check. &#10;And made new method to convert char to in since the java style would be long and not intuitive looking. EK">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
