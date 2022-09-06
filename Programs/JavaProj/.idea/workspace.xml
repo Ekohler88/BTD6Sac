@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b707b9f5-7e93-4597-9f28-9e6ff74bb23f" name="Changes" comment="Made changes converPathToList by adding more conditions for proper upgrade check. &#10;And made new method to convert char to in since the java style would be long and not intuitive looking. EK" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EPOWXbceudTXNUKBP9Bua3tz1n" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Tower">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tower.Main" />
+      <module name="BTD6Calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tower.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tower" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tower.Tower" />
+      <module name="BTD6Calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tower.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Tower" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b707b9f5-7e93-4597-9f28-9e6ff74bb23f" name="Changes" comment="" />
+      <created>1662493787064</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662493787064</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Update with using IDE itelliJ and want all to be updated correctly. EK">
+      <created>1662494013920</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662494013920</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update with using IDE itelliJ and want all to be updated correctly. EK">
+      <created>1662494032301</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662494032301</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update with using IDE itelliJ and want all to be updated correctly. EK">
+      <created>1662494065677</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662494065677</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Made changes converPathToList by adding more conditions for proper upgrade check. &#10;And made new method to convert char to in since the java style would be long and not intuitive looking. EK">
+      <created>1662495173559</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662495173559</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update with using IDE itelliJ and want all to be updated correctly. EK" />
+    <MESSAGE value="Made changes converPathToList by adding more conditions for proper upgrade check. &#10;And made new method to convert char to in since the java style would be long and not intuitive looking. EK" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made changes converPathToList by adding more conditions for proper upgrade check. &#10;And made new method to convert char to in since the java style would be long and not intuitive looking. EK" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
