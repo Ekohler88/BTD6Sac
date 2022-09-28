@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/BTD6Sac.iml" filepath="$PROJECT_DIR$/.idea/BTD6Sac.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.metadata/.plugins/org.eclipse.egit.core/.org.eclipse.egit.core.cmp/.org.eclipse.egit.core.cmp.iml" filepath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.egit.core/.org.eclipse.egit.core.cmp/.org.eclipse.egit.core.cmp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programs/JavaProj/BTD6Calculator.iml" filepath="$PROJECT_DIR$/Programs/JavaProj/BTD6Calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgramIdeas/ProgramIdeas.iml" filepath="$PROJECT_DIR$/ProgramIdeas/ProgramIdeas.iml" />
     </modules>
   </component>
 </project>

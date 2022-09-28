@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
   <component name="EclipseModuleManager">
-    <libelement value="file://$USER_HOME$/OneDrive/Documents/GitHub/BTD6Sac/Programs/JavaProj/lib/commons-collections4-4.1.jar" />
-    <libelement value="file://$USER_HOME$/OneDrive/Documents/GitHub/BTD6Sac/Programs/JavaProj/lib/poi-3.17.jar" />
-    <libelement value="file://$USER_HOME$/OneDrive/Documents/GitHub/BTD6Sac/Programs/JavaProj/lib/poi-ooxml-3.17.jar" />
-    <libelement value="file://$USER_HOME$/OneDrive/Documents/GitHub/BTD6Sac/Programs/JavaProj/lib/poi-ooxml-schemas-3.17.jar" />
-    <libelement value="file://$USER_HOME$/OneDrive/Documents/GitHub/BTD6Sac/Programs/JavaProj/lib/xmlbeans-2.6.0.jar" />
     <libelement value="jar://$MODULE_DIR$/lib/commons-collections4-4.1.jar!/" />
     <libelement value="jar://$MODULE_DIR$/lib/poi-3.17.jar!/" />
     <libelement value="jar://$MODULE_DIR$/lib/poi-ooxml-3.17.jar!/" />
@@ -26,7 +21,7 @@
     <orderEntry type="module-library">
       <library name="commons-collections4-4.1.jar">
         <CLASSES>
-          <root url="file://$USER_HOME$/OneDrive/Documents/GitHub/BTD6Sac/Programs/JavaProj/lib/commons-collections4-4.1.jar" />
+          <root url="jar://$MODULE_DIR$/lib/commons-collections4-4.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -35,7 +30,7 @@
     <orderEntry type="module-library">
       <library name="poi-3.17.jar">
         <CLASSES>
-          <root url="file://$USER_HOME$/OneDrive/Documents/GitHub/BTD6Sac/Programs/JavaProj/lib/poi-3.17.jar" />
+          <root url="jar://$MODULE_DIR$/lib/poi-3.17.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -44,7 +39,7 @@
     <orderEntry type="module-library">
       <library name="poi-ooxml-3.17.jar">
         <CLASSES>
-          <root url="file://$USER_HOME$/OneDrive/Documents/GitHub/BTD6Sac/Programs/JavaProj/lib/poi-ooxml-3.17.jar" />
+          <root url="jar://$MODULE_DIR$/lib/poi-ooxml-3.17.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -53,7 +48,7 @@
     <orderEntry type="module-library">
       <library name="poi-ooxml-schemas-3.17.jar">
         <CLASSES>
-          <root url="file://$USER_HOME$/OneDrive/Documents/GitHub/BTD6Sac/Programs/JavaProj/lib/poi-ooxml-schemas-3.17.jar" />
+          <root url="jar://$MODULE_DIR$/lib/poi-ooxml-schemas-3.17.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -62,7 +57,7 @@
     <orderEntry type="module-library">
       <library name="xmlbeans-2.6.0.jar">
         <CLASSES>
-          <root url="file://$USER_HOME$/OneDrive/Documents/GitHub/BTD6Sac/Programs/JavaProj/lib/xmlbeans-2.6.0.jar" />
+          <root url="jar://$MODULE_DIR$/lib/xmlbeans-2.6.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
